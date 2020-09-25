@@ -1,4 +1,4 @@
-/* Text Elements */
+
 
 h1 {
   color: #000;
@@ -176,11 +176,6 @@ p.paragraph.services-paragraph {
   color: #eaeaea;
 }
 
-p.paragraph.payment-p {
-  max-width: 1200px;
-  color: #67686c;
-}
-
 p.paragraph.block-p {
   color: #535353;
 }
@@ -274,11 +269,6 @@ a.link-button.hero-button {
   letter-spacing: 1px;
   font-weight: 700;
   font-size: 16px;
-}
-
-a.link-button#skills-button {
-  text-transform: capitalize;
-  font-weight: 700;
 }
 
 a.link-button.appointment-button:hover {
@@ -840,6 +830,30 @@ button#gold-button {
   padding-bottom: 2.5rem;
 }
 
+div.responsive-picture.picture-2 > picture > img {
+  -o-object-position: 50% center;
+     object-position: 50% center;
+}
+
+div.responsive-picture.picture-1 > picture > img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: center 50%;
+     object-position: center 50%;
+}
+
+div.responsive-picture.picture-1 {
+  display: inline-block;
+  margin-right: 0;
+  margin-left: 50px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+div.responsive-picture.picture-2 {
+  margin-left: 50px;
+}
+
 span.glyph.button.font-icon-menu:hover {
   color: #5cf000;
 }
@@ -1110,10 +1124,6 @@ button.purchase-button:hover {
     border-color: #3ffdb1;
   }
 
-  a.link-button span.button-link-text-1 {
-    background-color: #3cd397;
-  }
-
   a.link-button.social-button:hover {
     background-color: #2dbd84;
   }
@@ -1197,5 +1207,26 @@ button.purchase-button:hover {
 
   .rule.experise-rule {
     padding-bottom: 1.875rem;
+  }
+}
+
+@media screen and (min-width: 80.875rem) {
+  /* Text Elements */
+
+  h1 span.heading-text-2 {
+    color: #5794ff;
+  }
+
+  div.responsive-picture.picture-1 {
+    margin-right: 10px;
+    margin-left: 0;
+    min-width: 600px;
+  }
+
+  div.responsive-picture.picture-2 {
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    min-width: 600px;
   }
 }
